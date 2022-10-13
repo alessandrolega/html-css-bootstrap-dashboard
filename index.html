@@ -14,24 +14,32 @@
         <header class="d-flex align-items-center">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-1">
+                    <div class="col-2">
                         <img class="img-fluid d-lg-inline-block d-none"  src="./img/logo.svg" alt="logo">
                         <img class="img-fluid d-lg-none" src="./img/mobile-logo.png" alt="mobile-logo">
                         
                     </div>
-                    <div class="col-10">
+                    <div class="col-8">
                         <div class="input-group">
                             <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
                             <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                           </div>
                     </div>
-                    <div class="col-1 d-flex justify-content-around">
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-circle-question"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                        <i class="fa-solid fa-bell text-warning"></i>
-
+                    <div class="col-2 d-flex justify-content-around align-items-center">
+                        <i class="fa-solid fa-list d-none d-lg-inline-block"></i>
+                        <i class="fa-solid fa-circle-question d-none d-lg-inline-block"></i>
+                        <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-block"></i>
                         <!--DROPDOWN-->
+                        <div class="btn-group">
+                            <span type="button" class="btn btn-outline-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell text-warning"></i>
+                            </span>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><button class="dropdown-item" type="button">Action</button></li>
+                              <li><button class="dropdown-item" type="button">Another action</button></li>
+                              <li><button class="dropdown-item" type="button">Something else here</button></li>
+                            </ul>
+                          </div>
                         
                         
                     </div>
@@ -47,7 +55,20 @@
             <div class="container-fluid h-100">
                 <div class="row h-100">
                     <!--SIDEBAR-->
-                    <div class="col-2 bg-dark-custom text-white" id="sidebar">sidebar</div>
+                    <div class="col-2 bg-dark-custom text-white d-flex flex-column justify-content-between" id="sidebar">
+                        <div class="pt-3 nav flex-column list-unstyled text-center justify-content-center p-0">
+                            <a class="nav-link active text-white" aria-current="page" href="#"><i
+                                class="fa-solid fa-house fs-6 px-2"></i><span class="d-none d-lg-inline fs-6">Home</span></a>
+                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-chart-simple px-2 fs-5"></i><span
+                                class="d-none d-lg-inline fs-6">Stats</span></a>
+                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-signal  px-2 fs-6"></i><span
+                                class="d-none d-lg-inline fs-6">Signals</span></a>
+                          </div>
+                          <div class="aside-bottom text-center p-0 my-4">
+                            <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i><span
+                                class="d-none d-lg-inline fs-6 ms-2">Admin</span></a>
+                          </div>
+                    </div>
 
                     <!--MAIN-->
                     <div class="col-10 px-0">
@@ -58,8 +79,14 @@
                             <div class="col-lg-8">Boolean</div>
                             <div class="col-lg-4">Studenti online negli ultimi 30 minuti</div>
                         </div>
-
                     </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8"></div>
+                                <div class="col-lg-4"></div>
+                            </div>
+                        </div>
+                        
                     </div>
                     
                    
@@ -70,7 +97,7 @@
         </main>
     </div>
 
-    <!--HEADER-->
+  
 
 
     
