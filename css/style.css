@@ -1,8 +1,27 @@
-header{
+.bg-dark-custom{
+    background-color: #0A1E34;
+}
+
+.full-contenitore{
+    height: 100vh;
     
 }
 
-.color-textarea2{
-    background-color: lightgrey;
+header{
+    height: 100px;
+    background-color: aquamarine;
 }
+
+main{
+    height: calc(100% - 100px);
+    background-color: aquamarine;
+}
+
+#sidebar{
+    background-image: url('../img/sidebar-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
 
