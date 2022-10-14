@@ -13,7 +13,6 @@ header{
 
 main{
     height: calc(100% - 100px);
-    background-color: aquamarine;
     overflow-y: auto;
 }
 
@@ -21,11 +20,12 @@ main{
     background-image: url('../img/sidebar-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
 }
 
 .icone-tabella{
     max-width: 25px;
 }
+
+
 
 
